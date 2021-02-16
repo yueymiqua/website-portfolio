@@ -1,0 +1,488 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Crimson Pro', serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 200px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 200px;
+}
+
+h1 {
+  color: #357b70;
+}
+
+h2 {
+  color: #357b70;
+}
+
+a {
+  color: #357b70;
+}
+
+table {
+  color: #357b70;
+}
+
+div {
+  color: #357b70;
+}
+
+label {
+  color: #357b70;
+}
+
+a:visited {
+  color: #05676e;
+}
+
+a:hover,
+a:focus {
+  /*no underline when hovering or selecting link with keyboard*/
+  text-decoration: none;
+}
+
+a:active {
+  color: #489c79;
+}
+
+a[aria-label='email address'] {
+  color: rgb(0, 0, 139);
+}
+a[aria-label='skype number'] {
+  color: rgb(0, 0, 139);
+}
+a[aria-label='telephone number'] {
+  color: rgb(0, 0, 139);
+}
+
+p {
+  color: #357b70;
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #357b70;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /* transition-duration: 0.2s;
+  transition-property: opacity; */
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  /* This replaces the above two lines into a single property. 
+  Transition-timing function is set to ease 
+  Transition-delay is set to 0 seconds*/
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #357b70;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  /* transition-duration: 0.2s;
+  transition-property: opacity; */
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  /* This replaces the above two lines into a single property. 
+  Transition-timing function is set to ease 
+  Transition-delay is set to 0 seconds*/
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#button {
+  color: #ffffff;
+}
+
+.secondary_button {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.berlin {
+  text-align: center;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.profile_portrait {
+  width: 250px;
+  height: auto;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ul {
+  list-style-type: none; This would remove the bullet points
+} */
+
+input[type='submit'] {
+  background-color: rgb(0, 255, 127);
+}
+input[type='submit']:hover {
+  cursor: pointer;
+  background-color: rgb(0, 128, 128);
+}
+input[type='submit']:focus {
+  cursor: pointer;
+  background-color: rgb(0, 128, 128);
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+img[alt='logo'] {
+  height: 100px;
+  width: auto;
+}
+
+table {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0, 1, 200px;
+  flex: 0, 1, 200px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.about-section {
+  text-align: center;
+}
+
+/* start grid fallback */
+.project-list__item {
+  display: inline-block;
+  width: 33%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+  .project-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+  }
+
+  .project-list__item {
+    background-color: rgb(211, 211, 211);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .project-list__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+}
+
+@media all and (max-width: var(--max-width-small-screen)) {
+  .project-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .project-list__item:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: var(--max-width-small-screen)) {
+  .project-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: var(--max-width-small-screen)) and (max-width: var(--max-width-medium-screen)) {
+  .project-list {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: var(--max-width-medium-screen)) {
+  .project-list {
+    grid-gap: 10px;
+  }
+  .project-list__item:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-name: color-change;
+  animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/* To shorten the code above:
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}*/
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-name: cloud-move;
+  animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/* To shorten the code above:
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation-duration: 34s;
+  animation-duration: 34s;
+  -webkit-animation-name: cloud-move-reverse;
+  animation-name: cloud-move-reverse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/* To shorten the code above:
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@-webkit-keyframes star-spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes star-spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.star1,
+.star2,
+.star3,
+.star4 {
+  -webkit-transform-origin: 43px;
+  -ms-transform-origin: 43px;
+  transform-origin: 43px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: star-spin;
+  animation-name: star-spin;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
