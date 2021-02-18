@@ -78,6 +78,21 @@ a[aria-label='telephone number'] {
   color: var(--dark-blue);
 }
 
+img[alt='twitter'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='linkedin'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='github'] {
+  height: 30px;
+  width: 30px;
+}
+
 p {
   color: var(--primary-color);
   font-size: var(--font-size-regular);
