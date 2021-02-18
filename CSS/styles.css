@@ -14,7 +14,7 @@
   --black: rgb(0, 0, 0);
   --light-grey: rgb(211, 211, 211);
   --font-size-regular: 20px;
-  --font-size-h1: 30px;
+  --font-size-h1: 50px;
   --font-size-h2: 24px;
   --font-weight: 200px;
   --grid-gap: 20px;
@@ -78,6 +78,21 @@ a[aria-label='telephone number'] {
   color: var(--dark-blue);
 }
 
+img[alt='twitter'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='linkedin'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='github'] {
+  height: 30px;
+  width: 30px;
+}
+
 p {
   color: var(--primary-color);
   font-size: var(--font-size-regular);
@@ -138,7 +153,7 @@ button:focus,
 }
 
 .profile_portrait {
-  width: 250px;
+  width: 40%;
   height: auto;
   float: left;
   margin-right: 40px;
@@ -236,7 +251,7 @@ td {
   }
 }
 
-@media all and (max-width: var(--max-width-small-screen)) {
+@media all and (max-width: 500px) {
   .project-list {
     grid-template-columns: 1fr;
     grid-gap: var(--grid-gap);
@@ -250,19 +265,19 @@ td {
   }
 }
 
-@media all and (max-width: var(--max-width-small-screen)) {
+@media all and (max-width: 500px) {
   .project-list {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: var(--max-width-small-screen)) and (max-width: var(--max-width-medium-screen)) {
+@media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: var(--max-width-medium-screen)) {
+@media all and (max-width: 750px) {
   .project-list {
     grid-gap: var(--grid-gap-project-list);
   }
@@ -273,6 +288,11 @@ td {
   h1 {
     font-size: var(--font-size-regular);
   }
+}
+
+svg {
+  width: 90%;
+  height: auto;
 }
 
 @keyframes color-change {
