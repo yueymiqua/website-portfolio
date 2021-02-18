@@ -191,6 +191,21 @@ input[type='submit']:focus {
   background-color: var(--real-teal);
 }
 
+img[alt='twitter'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='linkedin'] {
+  height: 30px;
+  width: 30px;
+}
+
+img[alt='github'] {
+  height: 30px;
+  width: 30px;
+}
+
 .page-footer {
   clear: both;
   display: -webkit-box;
